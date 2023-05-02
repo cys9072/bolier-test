@@ -1,0 +1,232 @@
+/* XXX */
+/* =============================================================== */
+/* Never change or edit any properties in this file.               */
+/* =============================================================== */
+
+/* ROOT */
+:root {
+  /* ================================================ COLOR PALETTE  */
+  --white: #ffffff;
+  --red: #e9462b;
+  --black-01: #000000;
+  --black-02: #242424;
+
+  --outline-02: #efefef;
+
+  --blue-01: #18256b;
+  --blue-02: #263cab;
+  --blue-03: #2e49d1;
+  --blue-m: #3454eb;
+  --blue-05: #2475ee;
+  --blue-06: #d2e4ff;
+  --blue-07: #ebf3ff;
+  --blue-08: #f4f9ff;
+
+  --pink-01: #ff9e8c;
+  --pink-02: #d48379;
+  --pink-m: #e9736b;
+  --pink-04: #ff6c69;
+  --pink-05: #ed616e;
+
+  --gray-01: #fbfbfb;
+  --gray-02: #f7f7f7;
+  --gray-03: #f5f4f3;
+  --gray-04: #efefef;
+  --gray-05: #ececec;
+  --gray-06: #dfdfdf;
+  --gray-07: #c1c1c1;
+  --gray-08: #a5a5a5;
+  --gray-09: #8b8b8b;
+  --gray-10: #6f6f6f;
+  --gray-11: #555555;
+  --gray-12: #3d3d3d;
+
+  /* ================================================ BORDER RADIUS */
+  --btn-radius: 2px;
+  --faq-radius: 8px;
+}
+
+/* =============================================================== */
+/* ======================================================= HEADER  */
+/* =============================================================== */
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  z-index: 1000;
+  background-color: var(--white);
+  padding: 24px 20px;
+  
+}
+
+/* =============================================================== */
+/* ======================================================= HEADER  */
+/* =============================================================== */
+
+.gnb-nav {display: flex; align-self: center; justify-content: center;}
+.gnb-nav--list {width: 100%; max-width:1200px; display: flex; align-items: center; justify-content: space-between;}
+.gnb-item .logo-link  {font-size: 20px; font-weight: 700;}
+
+/* =============================================================== */
+/* ======================================================= FOOTER  */
+/* =============================================================== */
+.footer { padding: 80px 0;}
+.footer-wrap {max-width: 1200px; margin: 0 auto;}
+.footer-wrap .footer__nav {width: 100%; display: flex; margin-bottom: 80px; align-items: baseline;}
+.footer__nav .footer-logo .logo-link {font-size:28px; font-weight: 700; color: var(--blue-m);}
+.footer__nav .nav-item {flex:1; display: flex; flex-direction: column;}
+.footer__nav .nav-item .title {font-weight: 700; margin-bottom: 20px;}
+.footer__nav .nav-item .link {font-size: 14px; color:var(--gray-12);}
+
+.footer-wrap .footer__desc {width: 100%; display: flex; gap:20px; flex-wrap: wrap;}
+.footer-wrap .footer__desc .desc-text {font-size: 14px; color: var(--gray-11);}
+.footer-wrap .footer__desc .desc-text.business-num-local {width: 100%;}
+.footer-wrap .footer__desc .desc-text.copyright {width: 100%;}
+
+/* =============================================================== */
+/* ======================================================= LAYOUT  */
+/* =============================================================== */
+.main {max-width: 1920px; margin: 0 auto;}
+
+.SIDE_PADDING {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ONE_LINE_ELLIPSIS {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 160%;
+}
+.ONE_LINE_ELLIPSIS.FULL_WIDTH {
+  width: 100%;
+}
+/* =============================================================== */
+/* ===================================================== FLEX BOX  */
+/* =============================================================== */
+.FLEX_BOX {
+  width: 100%;
+  display: flex;
+}
+.FLEX_BOX.AUTO {
+  width: auto;
+  display: flex;
+}
+.ALIGN_START {
+  align-items: flex-start;
+}
+.ALIGN_CENTER {
+  align-items: center;
+}
+.ALIGN_END {
+  align-items: flex-end;
+}
+
+.JUSTIFY_START {
+  justify-content: flex-start;
+}
+.JUSTIFY_CENTER {
+  justify-content: center;
+}
+.JUSTIFY_END {
+  justify-content: flex-end;
+}
+.JUSTIFY_SPACE {
+  justify-content: space-between;
+}
+
+.FLEX_DIR_COL {
+  flex-direction: column;
+}
+.FLEX_DIR_ROW {
+  flex-direction: row;
+}
+.FLEX_1 {
+  flex: 1;
+}
+.FLEX_2 {
+  flex: 2;
+}
+
+.GAP_5 {gap:5px; }
+
+.FULL_HEIGHT {
+  height: 100%;
+}
+
+/* =============================================================== */
+/* ======================================================== INPUT  */
+/* =============================================================== */
+
+/* =============================================================== */
+/* ========================================================= LINK  */
+/* =============================================================== */
+.link {color:var(--blue-05); padding-bottom: 2px;}
+.link.under {text-decoration: underline;}
+
+a.link:visited {
+  color: purple;
+}
+
+/* =============================================================== */
+/* ======================================================= BUTTON  */
+/* =============================================================== */
+
+.common-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 14px 0px;
+  border-radius: var(--btn-radius);
+  line-height: 1.4;
+  border: 1px solid transparent;
+}
+/* PRIMARY Btn */
+.common-btn.primary {
+  background: var(--blue-m);
+  color: var(--white);
+  border: 1px solid transparent;
+}
+/* SECONDARY Btn */
+.common-btn.secondary {
+  background: var(--blue-06);
+  color: var(--blue-m);
+  border-color: var(--blue-m);
+}
+/* GRAY Btn */
+.common-btn.gray {
+  background: var(--gray-01);
+  color: var(--gray-11);
+  border-color: var(--gray-06);
+}
+/* LINE Btn */
+.common-btn.line {
+  background: var(--white);
+  color: var(--blue-m);
+  border-color: var(--blue-m);
+}
+.btn_L {
+  width: 160px;
+}
+.btn_M {
+  width: 140px;
+  padding: 12px 0;
+  font-size: 18px;
+}
+.btn_S {
+  width: 80px;
+  padding: 7px 0;
+  font-size: 12px;
+}
+.btn_XS {
+  width: 56px;
+  padding: 3px 0;
+  font-size: 12px;
+}
