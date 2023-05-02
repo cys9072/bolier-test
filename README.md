@@ -6,7 +6,6 @@ BoilerPlate 폴더 기본구조
 Root
 |─ assets
     ├── css
-    │   └── main.css
     │   └── normalize.css
     │   └── reset.css
     │   └── common.css
@@ -23,7 +22,7 @@ Root
 ├── js
 │   ├── main.js
 │   └── vendor
-│       └── modernizr.min.js
+│       └── lib.js
 ├── .editorconfig
 ├── .gitattributes
 ├── 404.html
@@ -39,7 +38,6 @@ Root
 ## 각 파일 설명
 
 [normalize.css](#normalize) <br/>
-[main.css](#normalize) <br/>
 [reset.css](#reset) <br/>
 [common.css](#common) <br/>
 [style.css](#style) <br/>
@@ -58,11 +56,7 @@ Root
 
 > ### normalize
 >
-> - 브라우저마다 다른 스타일을 가진 요소들을 통합.(ver. 8.0.1)
-
-> ### main
->
-> - 기본 타이포그래피 설정 + 원하지 않은 text-shadow 삭제 + 헬퍼 클래스 제공
+> - 브라우저마다 다른 스타일을 가진 요소들을 통합.(ver. 8.0.1) + main css
 
 > ### reset
 >
