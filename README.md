@@ -22,10 +22,10 @@ Root
     └- font
 ├── js
 │   ├── main.js
-│   ├── plugins.js
 │   └── vendor
 │       └── modernizr.min.js
 ├── .editorconfig
+├── .gitattributes
 ├── 404.html
 ├── README.md
 ├── robots.txt
@@ -46,6 +46,7 @@ Root
 [doc](#doc) <br/>
 [main.js](#mainjs) <br/>
 [editorconfig](#editorconfig) <br/>
+[gitattributes](#gitattributes) <br/>
 [404page](#404) <br/>
 [robot](#robot) <br/>
 
@@ -120,6 +121,10 @@ Root
 > ### editorconfig
 >
 > - 다른 IDE나 에디터에 코딩 스타일 유지. 해당 부분은 [플러그인 설치](https://editorconfig.org/#download)가 각 에디터 마다 필요한데, 해당 부분은 굳이 필요하지 않으면 삭제 예정
+>
+> ### gitattributes
+>
+> - LF, CRLF 간의 줄바꿈 이슈
 
 > ### 404
 >
