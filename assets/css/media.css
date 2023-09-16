@@ -1,0 +1,15 @@
+/* All css, Responsive css */
+/* laptop ~  */
+.pc-only {
+  display: block;
+}
+.mb-only {
+  display: none;
+}
+/* laptop */
+@media screen and (max-width: 1240px) {}
+/* tablet ~  */
+@media screen and (max-width: 768px) {}
+/* mobile ~  */
+@media screen and (max-width: 460px) {}
+

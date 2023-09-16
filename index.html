@@ -16,47 +16,302 @@
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <meta name="theme-color" content="#000000" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
 
   <body>
     <div class="container">
-      <h1>boilerplate</h1>
-      <header>
-        <nav>
-          <ul>
-            <li>menu1</li>
-            <li>menu2</li>
-            <li>menu3</li>
-          </ul>
-        </nav>
-      </header>
+      <div class="wrap page main-page">
+        <header class="gnb" id="header">
+          <nav class="gnb-wrap">
+            <h1 class="logo">
+              <a href="/" class="logo-link">
+                <img src="/assets/img/icon/icon.png" alt="" />
+              </a>
+            </h1>
+            <ul class="gnb-list">
+              <li class="gnb-item">
+                <a href="/">Menu 1</a>
+              </li>
+              <li class="gnb-item">
+                <a href="/">Menu 2</a>
+              </li>
+              <li class="gnb-item">
+                <a href="/">Menu 3</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main id="main" class="main">
+          <!-- Accordion -->
+          <section class="section">
+            <article class="article">
+              <p class="article-title">accordion menu</p>
+              <div class="accordion-wrap">
+                <!-- accordion-item -->
+                <div class="accordion-item">
+                  <button type="button" class="accordion-item__title">
+                    <span class="title">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eius, quia illo repellat harum qui expedita eum minus id
+                      quis ea. Nostrum aut recusandae laboriosam quasi
+                      necessitatibus aliquam perferendis quas velit!
+                    </span>
+                    <!-- <img class="arr-img" src="" alt="arr" /> -->
+                  </button>
+                  <div class="accordion-item__desc">
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Mollitia animi id aut distinctio, et placeat reiciendis
+                      quisquam deserunt nobis itaque laudantium necessitatibus
+                      provident at ratione eaque earum error autem facilis!
+                    </p>
+                  </div>
+                </div>
 
-      <main>
-        <section>
-          <article>Sec 1</article>
-        </section>
-        <section>
-          <article>Sec 2</article>
-        </section>
-      </main>
+                <!-- accordion-item -->
+                <div class="accordion-item">
+                  <button type="button" class="accordion-item__title">
+                    <span class="title">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eius, quia illo repellat harum qui expedita eum minus id
+                      quis ea. Nostrum aut recusandae laboriosam quasi
+                      necessitatibus aliquam perferendis quas velit!
+                    </span>
+                    <!-- <img class="arr-img" src="" alt="arr" /> -->
+                  </button>
+                  <div class="accordion-item__desc">
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Mollitia animi id aut distinctio, et placeat reiciendis
+                      quisquam deserunt nobis itaque laudantium necessitatibus
+                      provident at ratione eaque earum error autem facilis!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- Tab -->
+          <section class="section">
+            <article class="article">
+              <p class="article-title">Tab</p>
 
-      <footer>this is footer</footer>
+              <div class="tab-wrap">
+                <div class="tab">
+                  <button
+                    class="tablinks tabBtn"
+                    onclick="openCity(event, 'London')"
+                  >
+                    London
+                  </button>
+                  <button
+                    class="tablinks tabBtn"
+                    onclick="openCity(event, 'Paris')"
+                  >
+                    Paris
+                  </button>
+                  <button
+                    class="tablinks tabBtn"
+                    onclick="openCity(event, 'Tokyo')"
+                  >
+                    Tokyo
+                  </button>
+                </div>
+
+                <div id="London" class="tabcontent">
+                  <h3>London</h3>
+                  <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- Filter -->
+          <section class="section">
+            <article class="article">
+              <p class="article-title">Filter</p>
+
+              <div class="filter-wrap">
+                <input
+                  type="text"
+                  id="myInput"
+                  onkeyup="myFunction()"
+                  placeholder="Search for names.."
+                />
+
+                <ul id="myUL">
+                  <li><a href="#">Adele</a></li>
+                  <li><a href="#">Agnes</a></li>
+
+                  <li><a href="#">Billy</a></li>
+                  <li><a href="#">Bob</a></li>
+
+                  <li><a href="#">Calvin</a></li>
+                  <li><a href="#">Christina</a></li>
+                  <li><a href="#">Cindy</a></li>
+                </ul>
+              </div>
+            </article>
+          </section>
+          <!-- Filter Dropdown -->
+          <section class="section">
+            <article class="article">
+              <p class="article-title">Dropdown</p>
+              <div class="filter-drop-down-wrap">
+                <!-- Control buttons -->
+                <div id="myBtnContainer">
+                  <button class="btn active" onclick="filterSelection('all')">
+                    Show all
+                  </button>
+                  <button class="btn" onclick="filterSelection('cars')">
+                    Cars
+                  </button>
+                  <button class="btn" onclick="filterSelection('animals')">
+                    Animals
+                  </button>
+                  <button class="btn" onclick="filterSelection('fruits')">
+                    Fruits
+                  </button>
+                  <button class="btn" onclick="filterSelection('colors')">
+                    Colors
+                  </button>
+                </div>
+
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                <div class="container">
+                  <div class="filterDiv cars">BMW</div>
+                  <div class="filterDiv colors fruits">Orange</div>
+                  <div class="filterDiv cars">Volvo</div>
+                  <div class="filterDiv colors">Red</div>
+                  <div class="filterDiv cars">Ford</div>
+                  <div class="filterDiv colors">Blue</div>
+                  <div class="filterDiv animals">Cat</div>
+                  <div class="filterDiv animals">Dog</div>
+                  <div class="filterDiv fruits">Melon</div>
+                  <div class="filterDiv fruits animals">Kiwi</div>
+                  <div class="filterDiv fruits">Banana</div>
+                  <div class="filterDiv fruits">Lemon</div>
+                  <div class="filterDiv animals">Cow</div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- slick -->
+          <section class="section">
+            <article class="article">
+              <p class="article-title">slick slide</p>
+              <div class="slick-wrap">
+                <div class="your-class">
+                  <div class="slick-slide">your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- text input -->
+          <section class="section">
+            <article class="article">
+              <p class="article-title">text input</p>
+              <div class="text-input-wrap">
+                <div class="input-area">
+                  <div class="input-box">
+                    <label for="textIpt">Basic</label>
+                    <input type="text" id="textIpt" class="custom-input" />
+                  </div>
+                  <div class="input-error">
+                    <p>error</p>
+                  </div>
+                </div>
+
+                <div class="input-area">
+                  <div class="input-box">
+                    <label for="textIpt1">ReadOnly</label>
+                    <input
+                      type="text"
+                      id="textIpt1"
+                      class="custom-input"
+                      readonly
+                      value="readonly"
+                    />
+                  </div>
+                  <div class="input-error">
+                    <p>error</p>
+                  </div>
+                </div>
+
+                <div class="input-area">
+                  <div class="input-box">
+                    <label for="textIpt2">Disabled</label>
+                    <input
+                      type="text"
+                      id="textIpt2"
+                      class="custom-input"
+                      disabled
+                      value="disabled"
+                    />
+                  </div>
+                  <div class="input-error">
+                    <p>error</p>
+                  </div>
+                </div>
+
+                <div class="input-area">
+                  <div class="input-box">
+                    <label for="textIpt2">Error!</label>
+                    <input
+                      type="text"
+                      id="textIpt2"
+                      class="custom-input error"
+                      value="error!!"
+                    />
+                  </div>
+                  <div class="input-error active">
+                    <p>error field</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="section">
+            <article class="article">
+              <div class="text-input-wrap">
+                <div class="input-area">
+                  <div class="input-box">
+                    <label for="textIpt">Basic</label>
+                    <input type="text" id="textIpt" class="custom-input" />
+                  </div>
+                  <div class="input-error">
+                    <p>error</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+        <footer id="footer">this is footer</footer>
+      </div>
     </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- Google Analytics 사용시 아래 코드 활성화해서 사용  -->
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <!-- <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
+    <script>
+      $(".your-class").slick();
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script> -->
   </body>
 </html>

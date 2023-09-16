@@ -6,6 +6,7 @@ BoilerPlate 폴더 기본구조
 Root
 |─ assets
     ├── css
+    │   └── media.css
     │   └── normalize.css
     │   └── reset.css
     │   └── common.css
@@ -16,8 +17,6 @@ Root
     │   └── icon (아이콘)
     |        └── favicon.ico
     |        └── icon.png
-    |        └── tile-wide.png
-    |        └── tile.png
     └- font
 ├── js
 │   ├── main.js
@@ -38,6 +37,7 @@ Root
 ## 각 파일 설명
 
 [normalize.css](#normalize) <br/>
+[media.css](#media) <br/>
 [reset.css](#reset) <br/>
 [common.css](#common) <br/>
 [style.css](#style) <br/>
@@ -57,6 +57,10 @@ Root
 > ### normalize
 >
 > - 브라우저마다 다른 스타일을 가진 요소들을 통합.(ver. 8.0.1) + main css
+
+> ### media
+>
+> - 기본적인 미디어 쿼리
 
 > ### reset
 >
@@ -136,3 +140,5 @@ Root
 ## html5boilerplate 8.0 기반으로 작성. (해당 readme는 전체 파일의 사용법 요약본)
 
 - 원본파일은 [여기](https://github.com/h5bp/html5-boilerplate#quick-start)
+
+최종 수정일 2023.06.15

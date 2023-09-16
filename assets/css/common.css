@@ -47,47 +47,8 @@
 }
 
 /* =============================================================== */
-/* ======================================================= HEADER  */
-/* =============================================================== */
-
-.header {
-  position: sticky;
-  top: 0;
-  background: var(--white);
-  z-index: 1000;
-  background-color: var(--white);
-  padding: 24px 20px;
-  
-}
-
-/* =============================================================== */
-/* ======================================================= HEADER  */
-/* =============================================================== */
-
-.gnb-nav {display: flex; align-self: center; justify-content: center;}
-.gnb-nav--list {width: 100%; max-width:1200px; display: flex; align-items: center; justify-content: space-between;}
-.gnb-item .logo-link  {font-size: 20px; font-weight: 700;}
-
-/* =============================================================== */
-/* ======================================================= FOOTER  */
-/* =============================================================== */
-.footer { padding: 80px 0;}
-.footer-wrap {max-width: 1200px; margin: 0 auto;}
-.footer-wrap .footer__nav {width: 100%; display: flex; margin-bottom: 80px; align-items: baseline;}
-.footer__nav .footer-logo .logo-link {font-size:28px; font-weight: 700; color: var(--blue-m);}
-.footer__nav .nav-item {flex:1; display: flex; flex-direction: column;}
-.footer__nav .nav-item .title {font-weight: 700; margin-bottom: 20px;}
-.footer__nav .nav-item .link {font-size: 14px; color:var(--gray-12);}
-
-.footer-wrap .footer__desc {width: 100%; display: flex; gap:20px; flex-wrap: wrap;}
-.footer-wrap .footer__desc .desc-text {font-size: 14px; color: var(--gray-11);}
-.footer-wrap .footer__desc .desc-text.business-num-local {width: 100%;}
-.footer-wrap .footer__desc .desc-text.copyright {width: 100%;}
-
-/* =============================================================== */
 /* ======================================================= LAYOUT  */
 /* =============================================================== */
-.main {max-width: 1920px; margin: 0 auto;}
 
 .SIDE_PADDING {
   padding-left: 10px;
@@ -153,7 +114,9 @@
   flex: 2;
 }
 
-.GAP_5 {gap:5px; }
+.GAP_5 {
+  gap: 5px;
+}
 
 .FULL_HEIGHT {
   height: 100%;
@@ -166,8 +129,13 @@
 /* =============================================================== */
 /* ========================================================= LINK  */
 /* =============================================================== */
-.link {color:var(--blue-05); padding-bottom: 2px;}
-.link.under {text-decoration: underline;}
+.link {
+  color: var(--blue-05);
+  padding-bottom: 2px;
+}
+.link.under {
+  text-decoration: underline;
+}
 
 a.link:visited {
   color: purple;
